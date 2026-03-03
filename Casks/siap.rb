@@ -3,7 +3,7 @@ cask "siap" do
   name "siap"
   desc "Siap: a cli todo list written in Go"
   homepage "https://github.com/iman1704/siap"
-  version "0.0.2"
+  version "0.0.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "siap" do
   on_macos do
     on_intel do
       url "https://github.com/iman1704/siap/releases/download/v#{version}/siap_Darwin_x86_64.tar.gz"
-      sha256 "f89d9e6a9588834f4dca01bd9a57650c98c6e9ee04d96d7349ab1c35e8c5611c"
+      sha256 "8614acd6d28039911f90c3cc81106fcbb8695ffa2073623505b4835ebd3b4dd2"
     end
     on_arm do
       url "https://github.com/iman1704/siap/releases/download/v#{version}/siap_Darwin_arm64.tar.gz"
-      sha256 "318b256609269490fe003bed38a554780409feef0957a9d605061cce6ae12ea2"
+      sha256 "21db1a81b5471af2338046f4db1ffdc1b3b9c400e5df1b3086e79901444c6f09"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/iman1704/siap/releases/download/v#{version}/siap_Linux_x86_64.tar.gz"
-      sha256 "3bdd6d4af9cbc6ce938bf5d708dafac00c760314ccb4b82998a6fa5e54c028d1"
+      sha256 "494dc194ee427a6e2fca5955f6ada2cadbb81b70a0fbe83d1f7d6ab993184ade"
     end
     on_arm do
       url "https://github.com/iman1704/siap/releases/download/v#{version}/siap_Linux_arm64.tar.gz"
-      sha256 "b43850375a49cfbc9c9d6e1a1abafd72c4c371222003aa48575999d40bda26b0"
+      sha256 "fdf1f46ee4a2aa50946e41cff7b4bbf8e2de2a6c717b996a94cf5f70f8df1030"
     end
   end
 
