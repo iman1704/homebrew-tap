@@ -14,22 +14,28 @@ cask "siap" do
   on_macos do
     on_intel do
       url "https://github.com/iman1704/siap/releases/download/v#{version}/siap_Darwin_x86_64.tar.gz"
-      sha256 "9b09115fbe887191e25bc394709bd7dd4f802c3cac9fee21d8381bf25cdcca03"
+      sha256 "085c8486da0bfb508bf0280dd8d90be92e816f942ef49b330b7f6d69c140260f"
     end
     on_arm do
       url "https://github.com/iman1704/siap/releases/download/v#{version}/siap_Darwin_arm64.tar.gz"
-      sha256 "3662929fecc55fc79f113c5646917be94d0d0f92403c02f82886f7424b74968f"
+      sha256 "bdfa6589b3c967de6d82a28c25b00ff621960319ff70089d9d11f6f4155a41d1"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/iman1704/siap/releases/download/v#{version}/siap_Linux_x86_64.tar.gz"
-      sha256 "2529eb20bbe00a912a28f8d200f186f913b5f1f918c5145a72d45c90aae208c1"
+      sha256 "df97c3fa7c63030c23d36195d7900f5cb77cc1aff9a2037075044baca952cda6"
     end
     on_arm do
       url "https://github.com/iman1704/siap/releases/download/v#{version}/siap_Linux_arm64.tar.gz"
-      sha256 "1a0f0bf7c26dccb5a857fe767edb932ba6c5dede56fa028274ed9bd527b0c007"
+      sha256 "db881294555b433065d09e043d006e18d7a14bab5b08c99b4988240848b73971"
+    end
+  end
+
+  postflight do
+    if OS.mac?
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/siap"]
     end
   end
 
