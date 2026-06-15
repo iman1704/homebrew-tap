@@ -1,8 +1,8 @@
 class TerminalNotifier < Formula
   desc "Post native macOS User Notifications from the command-line"
   homepage "https://github.com/iman1704/terminal-notifier"
-  url "https://github.com/iman1704/terminal-notifier/archive/refs/tags/v0.0.1.tar.gz"
-  version "0.0.1"
+  url "https://github.com/iman1704/terminal-notifier/archive/refs/tags/v0.0.2.tar.gz"
+  version "0.0.2"
   # Since it's a local file URL, we can use a dummy SHA or omit it
   sha256 "4fe8c3574f55f87acf38dfc99547f309a12fc3da6d5246d0e4e81b805a360ae8"
 
