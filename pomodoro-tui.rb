@@ -2,9 +2,8 @@ class PomodoroTui < Formula
       desc "Simple Pomodoro timer with terminal UI (ratatui)"
       homepage "https://github.com/iman1704/pomodoro-tui"
       url "https://github.com/iman1704/pomodoro-tui/archive/refs/tags/v0.0.1.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      sha256 "afc80c0af53b123de33795150598ecb939e3ead009a73b8bed06a414da4be213"
       license "MIT"
-
       depends_on "rust" => :build
 
       def install
