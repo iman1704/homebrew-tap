@@ -1,8 +1,8 @@
 class AsciiFlow < Formula
   desc "ASCII ocean screensaver: fish schools hunted by ASCII sharks"
   homepage "https://github.com/iman1704/ascii-flow"
-  url "https://github.com/iman1704/ascii-flow/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "d9f5f35841cef1c5aac8ed1cd9eea7c582d07225c9d0e275a56f14e37cae0fb3"
+  url "https://github.com/iman1704/ascii-flow/archive/refs/tags/v0.0.3.tar.gz"
+  sha256 "e621ad90af0e2511f7d485df2d2e4fc3f2f56f9de85aaa6b1bfcb2d7aa52d0a2"
   license "MIT"
 
   depends_on "go" => :build
